@@ -1,32 +1,14 @@
-# Prerequisites
-*.d
+#include <iostream>
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+using namespace std;
+int main() {
+  cout << "Введите число: ";
+  string a;
+  int b;
+  cin >> a;
+  cout << "Сколько разрядов показать? ";
+  cin >> b;
+  for (int i = 0; i < b; i++) {
+    cout << a[i];
+  }
+}
